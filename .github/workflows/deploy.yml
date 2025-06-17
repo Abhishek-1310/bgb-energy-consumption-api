@@ -38,5 +38,7 @@ jobs:
           --template-file packaged.yaml \
           --stack-name bgb-energy-consumption-stack \
           --region ap-south-1 \
-          --capabilities CAPABILITY_IAM \ 
-          --debug
+          --debug \
+          --capabilities CAPABILITY_IAM
+          
+
