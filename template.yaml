@@ -15,6 +15,5 @@ Resources:
         ApiEvent:
           Type: Api
           Properties:
-            Name: bgb-energy-api
             Path: /hello
             Method: GET
