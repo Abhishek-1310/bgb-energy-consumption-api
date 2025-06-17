@@ -29,14 +29,14 @@ jobs:
         aws cloudformation package \
           --template-file template.yaml \
           --s3-bucket bgb-ceportal-package-storage \
-          --region ap-south-1
-          --output-template-file packaged.yaml \
+          --region ap-south-1 \
+          --output-template-file packaged.yaml 
 
     - name: Deploy Lambda
       run: |
         aws cloudformation deploy \
           --template-file packaged.yaml \
           --stack-name bgb-energy-consumption-stack \
-          --region ap-south-1
+          --region ap-south-1 \
           --capabilities CAPABILITY_IAM \ 
           --debug
